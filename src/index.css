@@ -1,0 +1,130 @@
+@import "tailwindcss";
+
+@theme {
+  --color-graphite: #12161C;
+  --color-panel: #1B212B;
+  --color-panel-hover: #232B38;
+  --color-text-primary: #E8EAED;
+  --color-text-secondary: #8B95A5;
+  --color-amber: #FF9F4A;
+  --color-teal: #4FD1C5;
+  --color-trace: #2A3040;
+  --color-border: #2A3040;
+
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+/* Base styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-graphite);
+  color: var(--color-text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Boot sequence cursor blink */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.cursor-blink::after {
+  content: '█';
+  animation: blink 0.8s step-end infinite;
+  color: var(--color-amber);
+  margin-left: 2px;
+}
+
+/* Corner bracket viewfinder for project cards */
+.viewfinder {
+  position: relative;
+}
+
+.viewfinder::before,
+.viewfinder::after,
+.viewfinder > .bracket-bottom::before,
+.viewfinder > .bracket-bottom::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  transition: border-color 0.3s ease;
+  pointer-events: none;
+}
+
+/* Top-left */
+.viewfinder::before {
+  top: -1px;
+  left: -1px;
+  border-top: 2px solid var(--color-border);
+  border-left: 2px solid var(--color-border);
+}
+
+/* Top-right */
+.viewfinder::after {
+  top: -1px;
+  right: -1px;
+  border-top: 2px solid var(--color-border);
+  border-right: 2px solid var(--color-border);
+}
+
+/* Bottom-left */
+.viewfinder > .bracket-bottom::before {
+  bottom: -1px;
+  left: -1px;
+  border-bottom: 2px solid var(--color-border);
+  border-left: 2px solid var(--color-border);
+}
+
+/* Bottom-right */
+.viewfinder > .bracket-bottom::after {
+  bottom: -1px;
+  right: -1px;
+  border-bottom: 2px solid var(--color-border);
+  border-right: 2px solid var(--color-border);
+}
+
+/* Hover: brackets glow amber */
+.viewfinder:hover::before,
+.viewfinder:hover::after,
+.viewfinder:hover > .bracket-bottom::before,
+.viewfinder:hover > .bracket-bottom::after {
+  border-color: var(--color-amber);
+  filter: drop-shadow(0 0 4px rgba(255, 159, 74, 0.4));
+}
+
+/* Geofencing radius circle pulse */
+@keyframes pulse-ring {
+  0% { opacity: 0.6; transform: translate(-50%, -50%) scale(1); }
+  50% { opacity: 0.3; transform: translate(-50%, -50%) scale(1.08); }
+  100% { opacity: 0.6; transform: translate(-50%, -50%) scale(1); }
+}
+
+.geo-pulse {
+  animation: pulse-ring 3s ease-in-out infinite;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-graphite);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-trace);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-secondary);
+}
