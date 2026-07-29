@@ -206,10 +206,10 @@ export const experience = [
   },
   {
     role: 'Pembicara / Narasumber',
-    organization: 'SMA Negeri 1 Tigapanah, Karo',
+    organization: 'SMA Negeri 1 Tiganderket, Karo',
     period: 'Maret 2026',
     description:
-      'Menjadi pembicara dalam kegiatan sosialisasi dan promosi kampus Universitas Sumatera Utara (USU) kepada siswa-siswi SMA, berbagi pengalaman kuliah di Teknik Informatika dan peluang karir di bidang teknologi.',
+      'Menjadi pembicara dalam kegiatan sosialisasi dan promosi kampus Universitas Methodist Indonesia kepada siswa-siswi SMA. Membahas topik seputar Artificial Intelligence (AI) & Internet of Things (IoT) serta peluang karir di bidang teknologi.',
   },
 ];
 
@@ -219,7 +219,7 @@ export const education = [
     institution: 'Universitas Methodist Indonesia',
     period: '2022 — 2026',
     description:
-      'Mempelajari dasar-dasar ilmu komputer, pengembangan perangkat lunak, dan sistem tertanam. Aktif membangun berbagai proyek praktis di bidang Web, IoT, dan AI selama masa perkuliahan.',
+      'Menempuh pendidikan S1 Teknik Informatika dengan fokus pada pengembangan perangkat lunak, kecerdasan buatan, dan sistem tertanam. Selama perkuliahan, aktif mengerjakan berbagai proyek nyata di bidang Web Development, Mobile App, IoT, dan Machine Learning. Mengaplikasikan ilmu yang dipelajari langsung ke dalam proyek-proyek yang memberikan solusi teknologi, mulai dari sistem absensi berbasis AI, robot keamanan berbasis computer vision, hingga aplikasi mobile pemesanan. Menyelesaikan studi dengan pengalaman praktis yang solid di berbagai stack teknologi modern.',
   },
 ];
 
