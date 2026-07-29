@@ -102,6 +102,21 @@ export const projects = [
     image: '/images/project_geofencing.jpg',
     hasGeofencing: true,
   },
+  {
+    id: 'inventory-prediksi',
+    category: 'WEB & DATA SCIENCE',
+    title: 'Sistem Pengecekan & Prediksi Stok Barang',
+    techStack: ['Python', 'Flask', 'Machine Learning', 'MySQL', 'Chart.js'],
+    description:
+      'Aplikasi web untuk monitoring stok barang secara real-time dan memprediksi kebutuhan stok ke depan menggunakan machine learning.',
+    highlights: [
+      'Prediksi stok ke depan dengan algoritma Machine Learning',
+      'Dashboard monitoring stok dengan status Low Stock & Out of Stock',
+      'Notifikasi otomatis ketika stok mendekati batas minimum',
+    ],
+    image: '/images/project_inventory.jpg',
+    hasGeofencing: false,
+  },
 ];
 
 export const certifications = [
