@@ -213,13 +213,6 @@ export const services = [
 
 export const experience = [
   {
-    role: 'Intern IT App Developer (Full Stack Web Dev)',
-    organization: 'DB Klik, Surabaya',
-    period: 'Agustus — Oktober 2026',
-    description:
-      'Merancang dan mengimplementasikan fitur aplikasi secara full stack, mulai dari antarmuka pengguna (UI/Blade/Tailwind/JavaScript) hingga logika backend berbasis Laravel. Membangun RESTful API & sistem webhook untuk integrasi dan sinkronisasi data real-time lintas platform. Merancang skema database, migrasi, dan relasi data kompleks termasuk struktur hierarki Parent-Child/Varian Produk. Melakukan debugging dan pengujian endpoint menggunakan Postman, serta menerapkan standar kolaborasi tim melalui Git dengan strategi feature branching dan code review.',
-  },
-  {
     role: 'Praktik Kerja Lapangan (PKL)',
     organization: 'Dinas Kominfo',
     period: 'Juli — September 2025',
@@ -232,6 +225,13 @@ export const experience = [
     period: 'Maret 2026',
     description:
       'Menjadi pembicara dalam kegiatan sosialisasi dan promosi kampus Universitas Methodist Indonesia kepada siswa-siswi SMA. Membahas topik seputar Artificial Intelligence (AI) & Internet of Things (IoT) serta peluang karir di bidang teknologi.',
+  },
+  {
+    role: 'Intern IT App Developer (Full Stack Web Dev)',
+    organization: 'DB Klik, Surabaya',
+    period: 'Agustus — Oktober 2026',
+    description:
+      'Merancang dan mengimplementasikan fitur aplikasi secara full stack, mulai dari antarmuka pengguna (UI/Blade/Tailwind/JavaScript) hingga logika backend berbasis Laravel. Membangun RESTful API & sistem webhook untuk integrasi dan sinkronisasi data real-time lintas platform. Merancang skema database, migrasi, dan relasi data kompleks termasuk struktur hierarki Parent-Child/Varian Produk. Melakukan debugging dan pengujian endpoint menggunakan Postman, serta menerapkan standar kolaborasi tim melalui Git dengan strategi feature branching dan code review.',
   },
 ];
 
